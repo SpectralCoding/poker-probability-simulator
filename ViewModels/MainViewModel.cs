@@ -14,9 +14,5 @@ namespace ViewModels {
 			get { return this.hand; }
 		}
 
-		public string Test {
-			get { return "lol"; }
-		}
-
 	}
 }
