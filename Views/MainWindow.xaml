@@ -1,8 +1,10 @@
 ﻿<Window x:Class="Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="454" Width="819">
+	<Grid>
+		<ListBox HorizontalAlignment="Left" Height="216" Margin="10,10,0,0" VerticalAlignment="Top" Width="544">
+			<Image Height="100" Width="100"/>
+		</ListBox>
+	</Grid>
 </Window>
