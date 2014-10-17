@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace Models {
 	public class ObjectBase : INotifyPropertyChanged {
-		// boiler-plate
+		#region WPF Binding Property Notification
 		public event PropertyChangedEventHandler PropertyChanged;
 		protected virtual void OnPropertyChanged(string propertyName) {
 			PropertyChangedEventHandler handler = PropertyChanged;
@@ -20,5 +20,7 @@ namespace Models {
 			OnPropertyChanged(propertyName);
 			return true;
 		}
+		#endregion
+
 	}
 }

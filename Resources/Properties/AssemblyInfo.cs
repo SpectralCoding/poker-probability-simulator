@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Poker Probability Simulator DataTypes Library")]
-[assembly: AssemblyDescription("DataTypes Library")]
+[assembly: AssemblyTitle("Poker Probability Simulator Resources Binary")]
+[assembly: AssemblyDescription("Resources Binary")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SpectralCoding")]
 [assembly: AssemblyProduct("Poker Probability Simulator")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c64f2430-e4d6-4745-bdad-6b14e072a8c2")]
+[assembly: Guid("3e81497b-be46-4344-ba4e-30081a71f86c")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.3.16359")]
-[assembly: AssemblyFileVersion("0.0.3.16359")]
+[assembly: AssemblyVersion("0.0.12.16359")]
+[assembly: AssemblyFileVersion("0.0.12.16359")]

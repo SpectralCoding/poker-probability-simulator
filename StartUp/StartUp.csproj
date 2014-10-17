@@ -51,6 +51,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -96,7 +97,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Resources\CardImages\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -123,63 +123,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\CardImages\Card_2c.gif" />
-    <Resource Include="Resources\CardImages\Card_2d.gif" />
-    <Resource Include="Resources\CardImages\Card_2h.gif" />
-    <Resource Include="Resources\CardImages\Card_2s.gif" />
-    <Resource Include="Resources\CardImages\Card_3c.gif" />
-    <Resource Include="Resources\CardImages\Card_3d.gif" />
-    <Resource Include="Resources\CardImages\Card_3h.gif" />
-    <Resource Include="Resources\CardImages\Card_3s.gif" />
-    <Resource Include="Resources\CardImages\Card_4c.gif" />
-    <Resource Include="Resources\CardImages\Card_4d.gif" />
-    <Resource Include="Resources\CardImages\Card_4h.gif" />
-    <Resource Include="Resources\CardImages\Card_4s.gif" />
-    <Resource Include="Resources\CardImages\Card_5c.gif" />
-    <Resource Include="Resources\CardImages\Card_5d.gif" />
-    <Resource Include="Resources\CardImages\Card_5h.gif" />
-    <Resource Include="Resources\CardImages\Card_5s.gif" />
-    <Resource Include="Resources\CardImages\Card_6c.gif" />
-    <Resource Include="Resources\CardImages\Card_6d.gif" />
-    <Resource Include="Resources\CardImages\Card_6h.gif" />
-    <Resource Include="Resources\CardImages\Card_6s.gif" />
-    <Resource Include="Resources\CardImages\Card_7c.gif" />
-    <Resource Include="Resources\CardImages\Card_7d.gif" />
-    <Resource Include="Resources\CardImages\Card_7h.gif" />
-    <Resource Include="Resources\CardImages\Card_7s.gif" />
-    <Resource Include="Resources\CardImages\Card_8c.gif" />
-    <Resource Include="Resources\CardImages\Card_8d.gif" />
-    <Resource Include="Resources\CardImages\Card_8h.gif" />
-    <Resource Include="Resources\CardImages\Card_8s.gif" />
-    <Resource Include="Resources\CardImages\Card_9c.gif" />
-    <Resource Include="Resources\CardImages\Card_9d.gif" />
-    <Resource Include="Resources\CardImages\Card_9h.gif" />
-    <Resource Include="Resources\CardImages\Card_9s.gif" />
-    <Resource Include="Resources\CardImages\Card_Ac.gif" />
-    <Resource Include="Resources\CardImages\Card_Ad.gif" />
-    <Resource Include="Resources\CardImages\Card_Ah.gif" />
-    <Resource Include="Resources\CardImages\Card_As.gif" />
-    <Resource Include="Resources\CardImages\Card_Back_Blue.gif" />
-    <Resource Include="Resources\CardImages\Card_Back_Red.gif" />
-    <Resource Include="Resources\CardImages\Card_Cs.gif" />
-    <Resource Include="Resources\CardImages\Card_Jc.gif" />
-    <Resource Include="Resources\CardImages\Card_Jd.gif" />
-    <Resource Include="Resources\CardImages\Card_Jh.gif" />
-    <Resource Include="Resources\CardImages\Card_Js.gif" />
-    <Resource Include="Resources\CardImages\Card_Kc.gif" />
-    <Resource Include="Resources\CardImages\Card_Kd.gif" />
-    <Resource Include="Resources\CardImages\Card_Kh.gif" />
-    <Resource Include="Resources\CardImages\Card_Ks.gif" />
-    <Resource Include="Resources\CardImages\Card_Qc.gif" />
-    <Resource Include="Resources\CardImages\Card_Qd.gif" />
-    <Resource Include="Resources\CardImages\Card_Qh.gif" />
-    <Resource Include="Resources\CardImages\Card_Qs.gif" />
-    <Resource Include="Resources\CardImages\Card_Tc.gif" />
-    <Resource Include="Resources\CardImages\Card_Td.gif" />
-    <Resource Include="Resources\CardImages\Card_Th.gif" />
-    <Resource Include="Resources\CardImages\Card_Ts.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
