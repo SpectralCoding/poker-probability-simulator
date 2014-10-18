@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ViewModels;
 using Models;
+using Utilities;
 
 namespace Views {
 	/// <summary>
@@ -25,5 +26,6 @@ namespace Views {
 			MainViewModel MainViewModel = new MainViewModel();
 			this.DataContext = MainViewModel;
 		}
+
 	}
 }

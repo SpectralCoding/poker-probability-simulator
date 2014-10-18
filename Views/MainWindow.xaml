@@ -1,9 +1,10 @@
 ﻿<Window x:Class="Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
         Title="MainWindow" Height="454" Width="819" WindowStartupLocation="CenterScreen">
 	<Grid>
-		<ItemsControl Height="202" VerticalAlignment="Top" HorizontalAlignment="Left" Width="622" Margin="10,10,0,0" ItemsSource="{Binding Path=Hand.Cards}">
+		<ItemsControl Height="120" VerticalAlignment="Top" HorizontalAlignment="Left" Width="622" Margin="10,10,0,0" ItemsSource="{Binding Path=Game.Hand.Cards}">
 			<ItemsControl.ItemsPanel>
 				<ItemsPanelTemplate>
 					<StackPanel Orientation="Horizontal"/>
@@ -11,9 +12,27 @@
 			</ItemsControl.ItemsPanel>
 			<ItemsControl.ItemTemplate>
 				<DataTemplate>
-					<Image Margin="5,0,5,0" Width="71" Height="96" Source="{Binding CardImage}" />
+					<Border BorderThickness="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3">
+						<i:Interaction.Triggers>
+							<i:EventTrigger EventName="MouseLeftButtonUp">
+								<i:InvokeCommandAction Command="{Binding Path=ToggleHoldCommand}" />
+							</i:EventTrigger>
+						</i:Interaction.Triggers>
+						<Border.Style>
+							<Style TargetType="Border">
+								<Style.Triggers>
+									<DataTrigger Binding="{Binding Path=IsHeld}" Value="True">
+										<Setter Property="BorderBrush" Value="Red" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</Border.Style>
+						<Image Margin="3,3,3,3" Width="71" Height="96" Source="{Binding Path=CardImage}" />
+					</Border>
 				</DataTemplate>
 			</ItemsControl.ItemTemplate>
 		</ItemsControl>
+		<Button Content="Deal" HorizontalAlignment="Left" Margin="199,154,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Path=Game.DealCommand}"/>
+		<Button Content="Reset" HorizontalAlignment="Left" Margin="279,154,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Path=Game.ResetCommand}"/>
 	</Grid>
 </Window>

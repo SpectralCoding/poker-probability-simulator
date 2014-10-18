@@ -5,14 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using Models;
+using Utilities;
 
 namespace ViewModels {
 	public class MainViewModel : ViewModelBase {
-		private Hand hand = new Hand();
 
-		public Hand Hand {
-			get { return this.hand; }
+		private Game game = new Game();
+
+		public Game Game {
+			get { return this.game; }
 		}
+
+		public MainViewModel() {
+			
+		}
+
 
 	}
 }
